@@ -1,5 +1,5 @@
 nav {
-    height:58px;
+    height:70px;
     background-color: #ffffff;
     
 }
@@ -16,8 +16,8 @@ li:before {
 ul li {
     color: #777777;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 13px 3px;
-    font-size: 30px;
+    padding: 20px 3px;
+    font-size: 20px;
     display: inline;   
     float: right; 
     clear: none;
@@ -35,10 +35,10 @@ a {
 #nametag {
     margin-left: 80px;
     position: relative;
-    top: 9px;
+    top: 10px;
     left: 160px;
     font-size:40px;
-    padding: 6px 30px;
+    padding: 17px 30px;
     display: inline;
     color: #ffffff;
     background-color: #4aaaa5;
@@ -46,12 +46,15 @@ a {
 }
 
 section {
+    background-color: #ffffff;
     margin: auto;
-    width: 962px;
+    width: 960px;
     position: relative;
-    top: 50px;
+    top: 35px;
 }
 section header {
+    width: 900px;
+    margin: 0px auto;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     color:#4aaaa5;
@@ -82,7 +85,6 @@ section h2 {
     margin: 40px auto;
     position: relative;
     width: 960px;
-    height: 900px;
 }
 
 #box1 {
@@ -121,4 +123,3 @@ button {
     color: #ffffff;
     background-color: #4aaaa5;
 }
-
