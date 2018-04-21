@@ -32,6 +32,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: skyblue;
+}
+
 #edge {
     margin-right: 250px;
 }
@@ -97,6 +101,11 @@ form {
     color: #777777;
 }
 
+form:focus {
+    height: 40px;
+    width: 940px;
+}
+
 input {
     position: relative;
     margin: 10px;
@@ -122,7 +131,21 @@ textarea {
     background-color: #4aaaa5;
 }
 
-#place-holder {
-    width: 920px;
-    height: 400px;
+.copyright {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    width: 1440px;
+    background-color:#777777;
+    border-top: 6px solid;
+    border-color: #4aaaa5;
+
+
+}
+
+.thunmbnail_portfolio {
+    height: 200px;
+    width: 200px;
+    margin: 18px;
 }
