@@ -1,33 +1,54 @@
+html,
 body {
-    overflow: scroll;
+    margin: 0;
+    display: table;
+    height: 100%;
+    width: 100%;
 }
+
+/* For Footer */
+
+.copyRight {
+    padding: 40px;
+    height: auto;
+    border-top: solid 6px #4aaaa5;
+
+}
+
+footer {
+    text-align: center;
+    background-color: #777777;
+    display: table-row;
+    height: 1px;
+    width: 100px;
+}
+
+/* For Nav Bar */
 
 nav {
-    height:74px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 72px;
     background-color: #ffffff;
-    
+    border-bottom: 2px solid;
+    border-color: #7777;
 }
 
-ul {
-    list-style: none;
-}
-
-li:before {
-    content: '|     ';
-    color: lightgray;
-    
-}
-ul li {
-    color: #777777;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 22px 3px;
-    font-size: 20px;
-    display: inline;   
-    float: right; 
-    clear: none;
+#nameTag {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 15%;
+    font-size:40px;
+    padding: 17px 30px;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 a {
+    padding: 0px 20px;
     color: #7777;
     text-decoration: none;
 }
@@ -36,63 +57,72 @@ a:hover {
     color: skyblue;
 }
 
-#edge {
-    margin-right: 250px;
+ul {
+    list-style: none;
 }
 
-#nametag {
-    margin-left: 80px;
-    position: relative;
-    top: 14px;
-    left: 160px;
-    font-size:40px;
-    padding: 17px 30px;
+#buffer {
+    width: 5%;
+}
+
+li:before {
+    content: '|     ';
+    color: lightgray;  
+}
+
+ul li {
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 28px 0px;
+    font-size: 20px;
     display: inline;
-    color: #ffffff;
-    background-color: #4aaaa5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: right;
 }
 
-section {
-    background-color: #ffffff;
-    margin: auto;
-    width: 960px;
-    position: relative;
-    top: 35px;
+/* General settings for Main Content */
+
+.container {
+    height: auto;
+    margin-bottom: 250px;
 }
-section header {
-    width: 900px;
-    margin: 0px auto;
+
+.main_content {
+    height: auto;
+    position: relative;
+    top: 195px;
+    left: 15%;
+    width: 960px;
+    background-color: #ffffff;
+}
+
+header {
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     color:#4aaaa5;
-    border-bottom: 2px solid lightgray;
     padding: 30px 20px;
 }
 
-section p {
+/* For About Me Page */
+
+.about_me_text{
     color: #777777;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
-    position: static;
-    padding: 15px;
-    margin:20px auto;
+    position: relative;
+    padding: 0px 20px 15px 20px;
+    margin: auto;
     line-height: 2;
 }
 
-section h2 {
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #777777;
-    padding: 5px;
-    margin: 10px 0px 0px 3px;
-
+p {
+    padding: 20px;
 }
 
-.big-box {
-    margin: 40px auto;
-    position: relative;
-    width: 960px;
+/* For Contact Page */
+
+.box_for_forms {
+    padding: 0px 20px 15px 20px;
+    margin: auto;
 }
 
 form {
@@ -108,8 +138,8 @@ form:focus {
 
 input {
     position: relative;
-    margin: 10px;
-    width: 920px;
+    margin: 10px 0px;
+    width: 900px;
     height: 30px;
     color: #777777;
 }
@@ -119,8 +149,8 @@ input {
 }
 
 textarea {
-    width: 920px;
-    margin:10px;
+    width: 900px;
+    margin:10px 0px;
 }
 #submit-btn {
     font-size: 20px;
@@ -131,21 +161,109 @@ textarea {
     background-color: #4aaaa5;
 }
 
-.copyright {
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    height: 40px;
-    width: 1440px;
-    background-color:#777777;
-    border-top: 6px solid;
-    border-color: #4aaaa5;
+/* For Portfolio Page */
 
 
+.portfolio_box {
+    margin: 20px;
 }
 
-.thunmbnail_portfolio {
-    height: 200px;
-    width: 200px;
-    margin: 18px;
+.portfolio_links {
+    margin: auto;
+    position: relative;
+    display: inline;
+    padding: 30px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 940px) {
+    
+    #nameTag {
+        position: absolute;
+        left: 5%;
+    }
+
+    .main_content {
+        left: 5%;
+        width: 600px;
+    }
+
+    nav {
+        position: absolute;
+    }
+
+    .portfolio_links {
+        padding: 30px 5px;
+        display: inline
+    }
+
+    form,
+    input,
+    textarea {
+        width: 550px;
+    }
+
+    footer {
+        width: 940px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 641px) {
+    
+    #nameTag {
+        left: 3%;
+    }
+
+    .main_content {
+        left: 3%;
+    }
+
+    #buffer {
+        width: 0%
+    }
+
+    a {
+        padding: 0px 10px;
+    }
+
+    .container {
+        margin-bottom: 275px;
+    }
+
+    footer {
+        width: 768px;
+    }
+    
+}
+
+@media screen and (max-width: 640px) and (min-width: 0px) {
+
+    #nameTag {
+        left: 0px;
+        width: 641px;
+        text-align: center;
+
+    }
+
+    #buffer {
+        width: 175px;
+    }
+    nav {
+        width: 700px;
+        top: 74px;
+    }
+
+    .main_content {
+        left: 3%;
+    }
+
+    .container {
+        margin-bottom: 250px;
+    }
+
+    footer,
+    .copyRight {
+        width: 641px;
+    }
 }
