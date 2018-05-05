@@ -163,7 +163,10 @@ textarea {
 
 /* For Portfolio Page */
 
-
+a, img {
+    width: 200px;
+    height: 200px;
+}
 .portfolio_box {
     margin: 20px;
 }
