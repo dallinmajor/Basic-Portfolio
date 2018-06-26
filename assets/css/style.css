@@ -8,6 +8,14 @@ body {
 
 /* For Footer */
 
+iframe {
+    margin: auto;
+    position: relative;
+    display: inline;
+    padding: 30px;
+    width: 200px;
+}
+
 .copyRight {
     padding: 40px;
     height: auto;
